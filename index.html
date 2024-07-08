@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
+
         body {
-            font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+        }
+
+        .login-wrapper {
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
+            /* width: 100vw; */
             height: 100vh;
             margin: 0;
         }
@@ -52,15 +57,23 @@
     </style>
 </head>
 <body>
-    <div class="login-box">
-        <h2>Login</h2>
-        <form action="/login" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <br>
-            <input type="password" name="password" placeholder="Password" required>
-            <br>
-            <input type="submit" value="Login">
-        </form>
+    <nav>
+        <ul>
+            <li><a href="/Kavibharath_silks.html">Kavibharath Silks</a></li>
+            <li><a href="/login.html">New Page</a></li>
+        </ul>
+    </nav>
+    <div class="login-wrapper">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <br>
+                <input type="password" name="password" placeholder="Password" required>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
     </div>
 </body>
 </html>
